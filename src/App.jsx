@@ -431,8 +431,8 @@ export default function BreweryLoyaltyApp({isAdmin=false,onOpenAdmin,onExitAdmin
   ];
 
   if(isAdmin) return(
-    <div style={{position:"fixed",inset:0,display:"flex",fontFamily:font,background:"#111118",zIndex:9999,overflow:"hidden"}}>
-      <aside style={{width:240,flexShrink:0,background:"#1a1a28",borderRight:"1px solid rgba(255,255,255,.08)",display:"flex",flexDirection:"column",height:"100vh",overflowY:"auto"}}>
+    <div style={{position:"fixed",inset:0,display:"flex",fontFamily:font,background:"#131008",zIndex:9999,overflow:"hidden"}}>
+      <aside style={{width:240,flexShrink:0,background:"#1c1810",borderRight:"1px solid rgba(255,255,255,.08)",display:"flex",flexDirection:"column",height:"100vh",overflowY:"auto"}}>
         <div style={{padding:"20px 20px 12px"}}>
           <button onClick={()=>onExitAdmin&&onExitAdmin()} style={{display:"flex",alignItems:"center",gap:6,fontSize:13,fontWeight:600,color:"rgba(255,255,255,.5)",background:"none",border:"none",cursor:"pointer",marginBottom:20,padding:0}}>
             <ChevronLeft size={14}/> Exit Admin
@@ -454,8 +454,8 @@ export default function BreweryLoyaltyApp({isAdmin=false,onOpenAdmin,onExitAdmin
           <div style={{fontSize:11,color:"rgba(255,255,255,.25)",fontWeight:600,textTransform:"uppercase",letterSpacing:1}}>BUILT BY NIMBUS THEORY™</div>
         </div>
       </aside>
-      <main style={{flex:1,overflowY:"auto",background:"#111118"}}>
-        <div style={{borderBottom:"1px solid rgba(255,255,255,.08)",background:"#1a1a28",padding:"16px 32px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+      <main style={{flex:1,overflowY:"auto",background:"#131008"}}>
+        <div style={{borderBottom:"1px solid rgba(255,255,255,.08)",background:"#1c1810",padding:"16px 32px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
           <div>
             <div style={{fontFamily:fontD,fontSize:22,fontWeight:700,textTransform:"uppercase",letterSpacing:.5,color:"#E8E8E8"}}>{adminNavItems.find(n=>n.id===adminTab)?.label}</div>
             <div style={{fontSize:13,color:"rgba(255,255,255,.45)",marginTop:2}}>Overview of {BREWERY.name} {BREWERY.subtitle} operations</div>
