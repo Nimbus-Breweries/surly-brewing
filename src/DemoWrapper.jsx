@@ -29,20 +29,20 @@ const salesCards = [
 export default function DemoWrapper() {
   const [isAdmin, setIsAdmin] = useState(false);
 
-  const accent     = "#3A6A90";
-  const accentDark = "#254A68";
+  const accent     = "#C07828";
+  const accentDark = "#985818";
 
   return (
     <div style={{
       display: "flex", height: "100vh", overflow: "hidden",
-      background: "radial-gradient(ellipse at 50% 110%, rgba(58,106,144,.4) 0%, transparent 55%), radial-gradient(ellipse at 50% 50%, #0a1520 0%, #05090f 55%, #020508 100%)",
+      background: "radial-gradient(ellipse at 50% 110%, rgba(160,90,20,.4) 0%, transparent 55%), radial-gradient(ellipse at 50% 50%, #2e1a06 0%, #120d03 55%, #0a0702 100%)",
       fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
       color: "#E8E8E8",
     }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #020508; }
+        body { background: #0a0702; }
         .side-scroll::-webkit-scrollbar { width: 4px; }
         .side-scroll::-webkit-scrollbar-track { background: transparent; }
         .side-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 2px; }
@@ -66,7 +66,7 @@ export default function DemoWrapper() {
 
           {/* Logo + name */}
           <div style={{ marginBottom: 32 }}>
-            <img src="https://surlybrewing.com/wp-content/uploads/2023/06/surly-logo-header.svg" alt={C.breweryShort || C.breweryName} style={{height: 34, width: "auto", display: "block", filter: "brightness(0) invert(1)", opacity: 0.9}} onError={e => e.target.style.display="none"} />
+            <img src="https://surlybrewing.com/wp-content/uploads/2023/06/surly-logo-header.svg" alt={C.breweryShort || C.breweryName} style={{height: 34, width: "auto", display: "block", filter: "none", opacity: 0.9}} onError={e => e.target.style.display="none"} />
             <div style={{ fontSize: 15, fontWeight: 700, color: "#fff", marginTop: 10 }}>{C.breweryShort || C.breweryName}</div>
             <div style={{ fontSize: 12, color: "rgba(255,255,255,.35)", marginTop: 3 }}>Brewery Loyalty App</div>
           </div>
@@ -133,7 +133,7 @@ export default function DemoWrapper() {
             height: "min(calc(100vh - 48px), 856px)",
             background: "#0a0a0a",
             borderRadius: 52,
-            boxShadow: "0 0 0 1px #1a1a1a, 0 40px 100px rgba(0,0,0,.9), 0 12px 40px rgba(0,0,0,.7), 0 0 80px rgba(58,106,144,0.35), 0 0 160px rgba(58,106,144,0.18), inset 0 1px 0 rgba(255,255,255,.08)",
+            boxShadow: "0 0 0 1px #1a1a1a, 0 40px 100px rgba(0,0,0,.9), 0 12px 40px rgba(0,0,0,.7), 0 0 80px rgba(160,90,20,0.35), 0 0 160px rgba(160,90,20,0.18), inset 0 1px 0 rgba(255,255,255,.08)",
             padding: 12,
             flexShrink: 0,
           }}>
